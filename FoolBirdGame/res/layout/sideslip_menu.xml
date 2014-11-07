@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_set"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="5dp"
+            android:src="@drawable/main_pressed_select" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="5dp"
+            android:src="@drawable/set_pressed_select" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/personal_center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/personal_center_bg_select"
+            android:clickable="true"
+            android:drawableLeft="@drawable/personal_center"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:padding="2dp"
+            android:paddingLeft="10dp"
+            android:text="@string/personal_center"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/message_center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/message_center"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:padding="2dp"
+            android:paddingLeft="10dp"
+            android:text="@string/message_center"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sign_select"
+            android:drawableLeft="@drawable/sign"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:padding="2dp"
+            android:paddingLeft="10dp"
+            android:text="@string/sign_in"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/integral_exchange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/integral_exchange_bg_select"
+            android:drawableLeft="@drawable/integral_exchange"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:padding="2dp"
+            android:paddingLeft="10dp"
+            android:text="@string/integral_exchange"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/photo_share"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/photo_share_bg_select"
+            android:drawableLeft="@drawable/photo_share"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:padding="2dp"
+            android:paddingLeft="10dp"
+            android:text="@string/photo_share"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/manager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/manager_bg_select"
+            android:drawableLeft="@drawable/manager"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:padding="2dp"
+            android:paddingLeft="10dp"
+            android:text="@string/manager"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/sign_bt_bg_select"
+            android:text="@string/sign_bt"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</LinearLayout>
