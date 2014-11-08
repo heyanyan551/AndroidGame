@@ -63,12 +63,12 @@ public class RankedFrg extends Fragment {
 
 	
 	private void initad() {
+		ad_left= (ImageView) view.findViewById(R.id.adleft);
+		ad_right=(ImageView) view.findViewById(R.id.adlight);
 		ad=(LinearLayout) view.findViewById(R.id.ranke_ad);
 		LayoutParams params = (LayoutParams) ad.getLayoutParams();
 		params.height =screenHeigt /5;
 		ad.setLayoutParams(params);
-		ad_left= (ImageView) view.findViewById(R.id.adleft);
-		ad_right=(ImageView) view.findViewById(R.id.adlight);
 	}
 
 
