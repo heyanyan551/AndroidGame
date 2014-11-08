@@ -56,18 +56,19 @@ public class RankedFrg extends Fragment {
 		DisplayMetrics dm = new DisplayMetrics();
 		manager.getDefaultDisplay().getMetrics(dm);
 		screenHeigt=(dm.heightPixels);
+		screenWidth=(dm.widthPixels);
 		rankeView();
 		initad();
 	}
 
 	
 	private void initad() {
-		ad_left= (ImageView) view.findViewById(R.id.adleft);
-		ad_right=(ImageView) view.findViewById(R.id.adlight);
 		ad=(LinearLayout) view.findViewById(R.id.ranke_ad);
 		LayoutParams params = (LayoutParams) ad.getLayoutParams();
-   		params.height =screenHeigt /5;
-   		ad.setLayoutParams(params);
+		params.height =screenHeigt /5;
+		ad.setLayoutParams(params);
+		ad_left= (ImageView) view.findViewById(R.id.adleft);
+		ad_right=(ImageView) view.findViewById(R.id.adlight);
 	}
 
 
