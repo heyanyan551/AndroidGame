@@ -29,6 +29,7 @@ import android.view.WindowManager;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 public class RankedFrg extends Fragment {
@@ -36,7 +37,6 @@ public class RankedFrg extends Fragment {
 	private HashMap<String, String> map;
     ImageView  ad_left;
     ImageView  ad_right;
-    LinearLayout  ad;
 	private View view;
 	private int screenWidth;
 	private int screenHeigt;
@@ -57,18 +57,24 @@ public class RankedFrg extends Fragment {
 		manager.getDefaultDisplay().getMetrics(dm);
 		screenHeigt=(dm.heightPixels);
 		screenWidth=(dm.widthPixels);
+		
 		rankeView();
 		initad();
 	}
 
-	
+	public int dip2px(float dipValue){  
+        final float scale = getActivity().getResources().getDisplayMetrics().density;   
+        return (int)(dipValue * scale + 0.5f);  
+     } 
 	private void initad() {
 		ad_left= (ImageView) view.findViewById(R.id.adleft);
+		LayoutParams ad_leftparams = ad_left.getLayoutParams();
+		ad_leftparams.height=dip2px(screenHeigt/4);
+		ad_left.setLayoutParams(ad_leftparams);
 		ad_right=(ImageView) view.findViewById(R.id.adlight);
-		ad=(LinearLayout) view.findViewById(R.id.ranke_ad);
-		LayoutParams params = (LayoutParams) ad.getLayoutParams();
-		params.height =screenHeigt /5;
-		ad.setLayoutParams(params);
+		LayoutParams paramsad_right = ad_right.getLayoutParams();
+		paramsad_right.height=dip2px(screenHeigt)/4;
+		ad_left.setLayoutParams(paramsad_right);
 	}
 
 
